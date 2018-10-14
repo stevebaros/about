@@ -1,7 +1,7 @@
 $(function () {
 	var $content = $('#jsonContent');
 	var data = {
-		rss_url: 'http://medium.jasonmdesign.com/feed'
+		rss_url: 'https://medium.com/feed/@hackernoon'
 	};
 	$.get('https://api.rss2json.com/v1/api.json', data, function (response) {
 		if (response.status == 'ok') {
